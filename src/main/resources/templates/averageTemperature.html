@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Average of the collected Temperatures</title>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <p>Temperature average</p>
+        <p th:text="${averageTemperature}" />
+        <p onload="getAverage('average')" id="average"></p>
+        <p>lowest Temperature:</p>
+        <p th:text="${lowestTemp}" />
+        <p id="lowest"></p>
+        <p>highest Temperature:</p>
+        <p th:text="${highestTemp}" />
+        <p>Temperature distance</p>
+        <p id="distance"></p>
+        <p th:text="${tempDifference}" />
+    </body>
+</html>
